@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+echo -n "Sisesta grupi suurus: "
+read suurus
+echo -n "Sisesta bussikohtade arv: "
+read bussikohad
+t2idetud=`expr $suurus / $bussikohad`
+echo bussidearv $t2idetud
+mahaj22nud=`expr $suurus - $t2idetud \* $bussikohad`
+echo "täis busse on $t2idetud ja maha jäi $mahaj22nud inimest."
+#
+#
